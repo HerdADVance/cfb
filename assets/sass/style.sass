@@ -1,0 +1,561 @@
+/* COLORS */
+$primaryColor: dodgerblue
+$secondaryColor: navy
+$tertiaryColor: mediumseagreen
+$white: #e6e3e5
+$black: #3d3b45
+
+/* DON'T CHANGE THIS SECTION. AUTO BASED ON ABOVE SELECTIONS */
+$primaryDark: darken($primaryColor, 20%)
+$primaryLight: lighten($primaryColor, 10%)
+$secondaryDark: darken($secondaryColor, 20%)
+$secondaryLight: lighten($secondaryColor, 20%)
+$tertiaryDark: darken($tertiaryColor, 20%)
+$tertiaryLight: lighten($tertiaryColor, 20%)
+
+/* WRAPS AND PADDING */
+$columnPadding: 10%
+$sectionPadding: 3em
+$wrap: 7%
+$widthForWrap: 100% - (2 * $wrap) //DON'T CHANGE THIS LINE
+
+/* HEADING COLORS, SIZES, MARGINS */
+$h1Color: $primaryColor
+$h2Color: $secondaryColor
+$h3Color: $primaryColor
+$h1FontSize: 1.75em 
+$h2FontSize: 1.25em
+$h3FontSize: 1.125em
+$h1Margin: 1.5em
+$h2Margin: 1.125em
+$h3Margin: 1em
+
+/* BASE FONT TYPE/SIZE AND PARAGRAPH COLOR/MARGIN/LINE-HEIGHT */
+$fontFamily: 'Montserrat', sans-serif
+$fontSize: 16px
+$paragraphColor: $black
+$paragraphMargin: 1.25em
+$lineHeight: 1.625em
+
+/* BUTTONS */
+$buttonFontSize: 1.125em
+$buttonPadding: 0.75em 1.25em
+$buttonBackground: $primaryColor
+$buttonTextColor: $secondaryColor
+$buttonBackgroundHover: $primaryDark
+$buttonTextColorHover: $secondaryColor
+$buttonTransitionTime: 0.25s
+$buttonBorderRadius: 5px
+
+/* LABELS AND FORMS */
+$labelColor: $primaryDark
+$labelFontSize: 1em
+$inputColor: $tertiaryColor
+$inputFontSize: 0.875em
+$inputHeight: 2.25em
+$inputPadding: 0.5em
+$inputMargin: 2.5em
+$textAreaHeight: 10em
+$formButtonFontSize: $buttonFontSize
+$formButtonPadding: $buttonPadding
+$formButtonWidth: auto
+
+/* SELECTED TEXT COLORS */
+$selectedTextBackground: $secondaryColor
+$selectedTextColor: $primaryColor
+
+/* TRANSITION TIME AND OVERLAY OPACITIES */
+$transitionTime: 0.5s
+$overlayOpacity: 0.45
+
+/* BOX SHADOW */
+$basicShadow: 0px 4px 10px #333
+
+
+/* ----- VARIABLES BELOW HERE ARE FOR SPECIFIC SITE SECTIONS. ABOVE ARE SITEWIDE ----- */
+
+/* HEADER OPTIONS */
+$headerColor: $tertiaryColor
+$headerPadding: 0.75em  
+$logoHeight: 8em
+
+/* MAIN NAV OPTIONS */
+$navFontSize: 1.125em
+$navPadding: 0.5em 1em
+
+/* SLIDER (IF ANY) OPTIONS */
+$sliderHeight: 50vh
+$sliderArrowSize: 80px
+$sliderArrowColor: $secondaryColor
+$sliderFontSize: 3em
+$sliderFontColor: $white
+
+/* FOOTER OPTIONS */
+$footerColor: $primaryColor
+$footerFontSize: 0.875em
+$footerPadding: 1.25em
+
+
+/* ===== END OF VARIABLES. BEGINNING OF REST OF FRAMEWORK ===== */
+
+/* GLOBAL */
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+*:focus
+	outline: none
+
+.mob
+	display: none
+
+body
+	display: flex
+	flex-direction: column
+	font-family: $fontFamily	
+	font-size: $fontSize
+	min-height: 100vh
+
+
+/* BASIC BLOCKS AND RESET */
+main
+	flex: 1
+
+section
+	padding-bottom: $sectionPadding
+	padding-top: $sectionPadding
+
+header, section, main, footer, .row
+	clear: both
+
+header:after, section:after, main:after, footer:after, .row:after
+	clear: both
+	content: ''
+	display: table
+
+h1, h2, h3, h4, h5, h6, ul, li, p
+	margin: 0
+	padding: 0
+
+
+/* LINKS */
+a
+	color: $primaryColor
+	text-decoration: none
+
+a:hover
+	text-decoration: underline
+
+
+/* IMAGES */
+img
+	max-width: 100%
+
+
+/* BUTTONS */
+button, input[type=submit]
+	background-color: $buttonBackground
+	border: none
+	border-radius: $buttonBorderRadius
+	color: $buttonTextColor
+	cursor: pointer
+	font-size: $buttonFontSize
+	outline: none
+	padding: $buttonPadding
+	transition: all ease $buttonTransitionTime
+
+button:hover, input[type=submit]
+	background-color: $buttonBackgroundHover
+	color: $buttonTextColorHover
+
+
+
+/* FORMS */
+label
+	color: $labelColor
+	display: block
+	font-size: $labelFontSize
+	font-weight: 700
+	margin-bottom: 3px
+
+input, textarea, select
+	color: $inputColor
+	font-size: $inputFontSize
+	height: $inputHeight
+	margin-bottom: $inputMargin
+	padding: $inputPadding
+	width: 100%
+
+select
+	cursor: pointer
+
+textarea
+	height: $textAreaHeight
+
+form .btn
+	font-size: $formButtonFontSize
+	padding: $formButtonPadding
+	width: $formButtonWidth
+
+
+/* COLUMNS */
+.row
+	display: flex
+.col-1
+	width: 8.3333%
+.col-2
+	width: 16.6666%
+.col-3
+	width: 25%
+.col-4
+	width: 33.3333%
+.col-5
+	width: 41.6666%
+.col-6
+	width: 50%
+.col-7
+	width: 58.3333%
+.col-8
+	width: 66.6666%
+.col-9
+	width: 75%
+.col-10
+	width: 83.3333%
+.col-11
+	width: 91.6666%
+.col-12
+	width: 100%
+[class*="col-"] 
+	margin-right: $columnPadding
+[class*="col-"]:last-child 
+	margin-right: 0
+
+
+/* FLEX */
+.flex
+	align-items: center
+	display: flex
+
+.unflex
+	display: block
+
+
+/* WRAPS AND PADDING AND MARGIN */
+.wrap
+	margin-left: $wrap
+	margin-right: $wrap
+	width: $widthForWrap
+
+.wrap-bg
+	padding-left: $wrap
+	padding-right: $wrap
+
+.unwrap
+	margin-left: -$wrap 
+.no-pad
+	padding: 0 
+.no-pad-x
+	padding-left: 0
+	padding-right: 0
+.no-pad-y
+	padding-bottom: 0 
+	padding-top: 0
+.no-mar
+	margin: 0 
+.no-mar-x
+	margin-left: 0 
+	margin-right: 0
+.no-mar-y
+	margin-bottom: 0 
+	margin-top: 0
+.no-mar-top
+	margin-top: 0
+.no-mar-bot
+	margin-bottom: 0
+.no-pad-top
+	padding-top: 0
+.no-pad-bot
+	padding-bottom: 0
+
+
+/* OVERLAYS */
+.overlay
+	background: rgba(0,0,0,$overlayOpacity)
+	height: 100%
+	position: absolute
+	top: 0
+	width: 100%
+
+.wrap-bg .overlay
+	@extend .unwrap
+
+
+/* COLORS */
+.pri
+	background-color: $primaryColor
+.sec
+	background-color: $secondaryColor
+.ter
+	background-color: $tertiaryColor
+.white
+	background-color: $white
+.black
+	background-color: $black
+.pri-hover:hover
+	background-color: $primaryColor
+.sec-hover:hover
+	background-color: $secondaryColor
+.ter-hover:hover
+	background-color: $tertiaryColor
+.white-hover
+	background-color: $white
+.black-hover
+	background-color: $black
+
+.pri-text
+	color: $primaryColor
+.sec-text
+	color: $secondaryColor
+.ter-text
+	color: $tertiaryColor
+.white-text
+	color: $white
+.black-text 
+	color: $black
+.pri-hover-text:hover
+	color: $primaryColor
+.sec-hover-text:hover
+	color: $secondaryColor
+.ter-hover-text:hover
+	color: $tertiaryColor
+.white-hover-text
+	color: $white
+.black-hover-text
+	color: $black
+
+::selection
+	background: $selectedTextBackground 
+	color: $selectedTextColor
+
+
+/* FONT STYLE AND ALIGNMENTS */
+.superlight
+	font-weight: 100
+.light
+	font-weight: 300
+.normal
+	font-weight: 400
+.semibold
+	font-weight: 600
+.bold
+	font-weight: 700
+.italic
+	font-style: italic
+.caps
+	text-transform: capitalize
+.upper
+	text-transform: uppercase
+.lower
+	text-transform: lowercase
+
+.left
+	text-align: left 
+.center
+	margin: 0px auto
+.centered
+	text-align: center
+.right
+	text-align: right
+.pull-left
+	float: left
+.pull-right
+	float: right
+
+/* ASSORTED REUSABLES */
+.rel
+	position: relative
+.abs 
+	position: absolute
+.full
+	width: 100%
+.trans
+	transition: $transitionTime all 
+.on-top
+	z-index: 2
+.on-topper
+	z-index: 3
+.on-toppest
+	z-index: 4
+.under
+	z-index: -1
+.pointer
+	cursor: pointer
+.shadow
+	box-shadow: $basicShadow
+
+
+/* NAVS */
+.nav-inline ul
+	display: flex
+
+.nav-inline li
+	position: relative
+
+.nav-inline li ul
+	flex-direction: column
+	left: 0 
+	max-height: 0
+	overflow: hidden
+	position: absolute
+	transition: all ease 0.5s
+	width: 100%
+	z-index: 9
+
+.nav-inline li:hover > ul
+	max-height: 100vh
+
+.nav-inline li ul li
+	display: block
+
+.nav-stretch li
+	flex-grow: 1
+
+.nav-right ul
+	justify-content: flex-end
+
+
+/* BASIC ELEMENTS */
+h1
+	color: $h1Color
+	font-size: $h1FontSize
+	margin-bottom: $h1Margin
+
+h2
+	color: $h2Color
+	font-size: $h2FontSize
+	margin-bottom: $h2Margin
+
+h3
+	color: $h3Color
+	font-size: $h3FontSize
+	margin-bottom: $h3Margin
+
+p
+	color: $paragraphColor
+	font-size: 1em
+	line-height: $lineHeight
+	margin-top: $paragraphMargin
+
+
+/* ========== BEGIN ELEMENTS UNIQUE FROM FRAMEWORK ========== */
+
+
+/* ----- HEADER ----- */
+.header
+	background-color: $headerColor
+	padding-bottom: $headerPadding
+	padding-top: $headerPadding
+
+.header h1
+	font-size: 2.75em
+
+.header h2
+	font-size: 1.25em
+
+.logo
+	height: $logoHeight
+
+
+/* ----- MAIN NAV ----- */
+nav ul
+	list-style: none
+
+nav li
+	background-color: $primaryColor
+	text-align: center
+	transition: background ease 0.25s
+
+nav li:hover
+	background-color: $primaryLight
+
+nav li:hover > a
+	color: $secondaryColor
+	text-decoration: none
+
+nav a
+	color: $secondaryColor
+	display: block
+	font-size: $navFontSize
+	height: 100%
+	padding: $navPadding
+	width: 100%
+
+nav li ul li:hover
+	background-color: $primaryDark
+
+nav li ul a
+	font-size: $navFontSize * 0.75
+
+
+
+/* ----- SLIDERS ----- */
+.splash
+	background-position-y: 100%
+	height: 35vh
+
+.splash .overlay
+	background: rgba(255,255,255,0.75)
+
+/* ----- MORE COON STUFF ----- */
+.more-coon h1
+	color: $tertiaryColor
+	font-size: 1.375em
+	margin-bottom: 0.875em
+
+.more-coon p
+	color: $white
+
+/* ----- FOOTER ----- */
+footer
+	background-color: $footerColor
+	color: $secondaryColor
+	padding: $footerPadding 0
+
+footer p
+	font-size: $footerFontSize
+
+
+/* ----- MEDIA QUERIES ----- */
+@media (max-width: 2000px) 
+	body
+		font-size: $fontSize * 1.5  
+@media (max-width: 1800px) 
+	body
+		font-size: $fontSize * 1.25  
+
+@media (max-width: 1600px) 
+	body
+		font-size: $fontSize * 1.125  
+
+@media (max-width: 1200px) 
+	body
+		font-size: $fontSize * 0.95  
+
+@media (max-width: 1000px) 
+	body
+		font-size: $fontSize * 0.875  
+
+@media (max-width: 800px) 
+	body
+		font-size: $fontSize * 0.8125
+	.row
+		display: block
+	[class*="col-"]
+		margin-right: 0
+		width: 100%
+
+
+
+
+
