@@ -1,7 +1,7 @@
 /* COLORS */
-$primaryColor: dodgerblue
-$secondaryColor: navy
-$tertiaryColor: mediumseagreen
+$primaryColor: navy
+$secondaryColor: white
+$tertiaryColor: crimson
 $white: #e6e3e5
 $black: #3d3b45
 
@@ -77,11 +77,13 @@ $basicShadow: 0px 4px 10px #333
 /* HEADER OPTIONS */
 $headerColor: $tertiaryColor
 $headerPadding: 0.75em  
-$logoHeight: 8em
+$logoHeight: 1.5em // Height if image or font-size if logo-text
+$headerTransition: top 0.5s
+$headerStickyOpacity: 0.95 // Only applies if header is sticky 
 
 /* MAIN NAV OPTIONS */
-$navFontSize: 1.125em
-$navPadding: 0.5em 1em
+$navFontSize: 0.95em
+$navPadding: 0.5em 
 
 /* SLIDER (IF ANY) OPTIONS */
 $sliderHeight: 50vh
@@ -278,6 +280,10 @@ form .btn
 .no-pad-bot
 	padding-bottom: 0
 
+/* BACKGROUNDS */
+.bg-img
+	background-repeat: no-repeat
+	background-size: cover
 
 /* OVERLAYS */
 .overlay
@@ -395,6 +401,35 @@ form .btn
 	box-shadow: $basicShadow
 
 
+/* HEADER */
+.header
+	background-color: $headerColor
+
+.header-info
+	padding-bottom: $headerPadding
+	padding-top: $headerPadding
+
+.header.sticky
+	top: 0
+	transition: $headerTransition
+
+.header.sticky-magic
+	background: rgba($headerColor, $headerStickyOpacity)
+	position: fixed
+	top: 0
+	z-index: 5
+
+.header.sticky-magic .sticky-hide
+	display: none
+
+
+.logo
+	height: $logoHeight
+
+.logo-text
+	font-size: $logoHeight
+
+
 /* NAVS */
 .nav-inline ul
 	display: flex
@@ -419,6 +454,7 @@ form .btn
 	display: block
 
 .nav-stretch li
+	flex-basis: 0
 	flex-grow: 1
 
 .nav-right ul
@@ -452,19 +488,8 @@ p
 
 
 /* ----- HEADER ----- */
-.header
-	background-color: $headerColor
-	padding-bottom: $headerPadding
-	padding-top: $headerPadding
-
-.header h1
-	font-size: 2.75em
-
 .header h2
-	font-size: 1.25em
-
-.logo
-	height: $logoHeight
+	font-size: 1em
 
 
 /* ----- MAIN NAV ----- */
@@ -499,9 +524,9 @@ nav li ul a
 
 
 
-/* ----- SLIDERS ----- */
+/* ----- SPLASH ----- */
 .splash
-	background-position-y: 100%
+	background-position-y: 85%
 	height: 35vh
 
 .splash .overlay

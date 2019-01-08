@@ -20,18 +20,29 @@
 
   <body class="home">
 
-  	<header class="header wrap-bg flex">
-  		<a href="/"><!--img class="logo" src="/assets/images/coon-logo.png" alt="Logo"--></a>
-        <div class="header-text">
-            <h1 class="no-mar-bot white-text">Follege Cootball</h1>
-            <h2 class="no-mar-bot sec-text superlight">The nation's dumbest college football site</h2>
+  	<header class="header full sticky" id="header">
+        <div class="header-info row wrap-bg">
+            <div class="col-12">
+                <div class="header-text">
+                    <h1 class="logo logo-text no-mar-bot white-text"><a href="/">Follege Cootball</a></h1>
+                    <span class="sticky-hide"><h2 class="no-mar-bot sec-text superlight">The world's smartest site for Fantasy College Football and the dumbest for everything else.</h2></span>
+                </div>
+            </div>
         </div>
-  	</header>
 
-    <nav class="nav nav-inline nav-stretch wrap-bg pri shadow on-top">
+        <nav class="nav nav-inline nav-stretch wrap-bg full pri shadow on-top">
         <ul>
-            <li><a href="sub.php">Rankings</a></li>
-            <li><a href="sub.php">Conferences</a>
+            <li><a href="sub.php">Fantasy CFB</a>
+                <ul>
+                    <li><a href="">Rankings & Projections</a></li>
+                    <li><a href="">Beat Writer Twitter Lists</a></li>
+                    <li><a href="">Depth Charts</a></li>
+                    <li><a href="">Weekly Matchups</a></li>
+                    <li><a href="">Recruiting</a></li>
+                    <li><a href="">DFS</a></li>
+                </ul>
+            </li>
+            <li><a href="sub.php">Conferences & Teams</a>
                 <ul>
                     <li><a href="">ACC</a></li>
                     <li><a href="">American</a></li>
@@ -45,14 +56,17 @@
                     <li><a href="">SunBelt</a></li>
                 </ul>
             </li>
-            <li><a href="sub.php">Something Else</a></li>
             <li><a href="sub.php">Podcast</a></li>
+            <li><a href="sub.php">Travel</a></li>
+            <li><a href="sub.php">Fun & Games</a></li>
         </ul>
-    </nav>
+        </nav>
+
+  	</header>
   	
   	<main>
 	  	
-        <section class="splash wrap-bg rel flex" style="background-image: url(/assets/images/psu.jpg);">
+        <section class="splash wrap-bg rel flex bg-img" style="background-image: url(/assets/images/psu.jpg);">
             <div class="on-top">
                 <h1 class="no-mar-bot">Welcome</h1>
             </div>
