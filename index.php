@@ -6,7 +6,7 @@
     <title>Follege Cootball</title>
     <link rel="icon" href="favicon.ico">
 
-    <meta name="author" content="Bulldog Creative Services">
+    <meta name="author" content="Alex Vance">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-9ralMzdK1QYsk4yBY680hmsb4/hJ98xK3w0TIaJ3ll4POWpWUYaA2bRjGGujGT8w" crossorigin="anonymous">
@@ -20,8 +20,8 @@
 
   <body class="home">
 
-  	<header class="header full sticky" id="header">
-        <div class="header-info row wrap-bg">
+  	<header class="header full sticky shadow" id="header">
+        <div class="header-info pri row wrap-bg">
             <div class="col-12">
                 <div class="header-text">
                     <h1 class="logo logo-text no-mar-bot white-text"><a href="/">Follege Cootball</a></h1>
@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <nav class="nav nav-inline nav-stretch wrap-bg full pri shadow on-top">
+        <nav class="nav nav-inline nav-stretch wrap-bg full pri on-top">
         <ul>
             <li><a href="">Rankings & Projections</a>
                 <ul>
