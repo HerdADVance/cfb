@@ -11,8 +11,8 @@
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-9ralMzdK1QYsk4yBY680hmsb4/hJ98xK3w0TIaJ3ll4POWpWUYaA2bRjGGujGT8w" crossorigin="anonymous">
     <link href="/assets/css/normalize.css" rel="stylesheet">
-    <link href="/assets/css/style.css?v=<?php echo date('U');?>" rel="stylesheet">
-    <link href="/assets/css/mobile.css?v=<?php echo date('U');?>" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/mobile.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
@@ -32,14 +32,17 @@
 
         <nav class="nav nav-inline nav-stretch wrap-bg full pri shadow on-top">
         <ul>
-            <li><a href="sub.php">Fantasy CFB</a>
+            <li><a href="">Rankings & Projections</a>
                 <ul>
-                    <li><a href="">Rankings & Projections</a></li>
-                    <li><a href="">Beat Writer Twitter Lists</a></li>
-                    <li><a href="">Depth Charts</a></li>
                     <li><a href="">Weekly Matchups</a></li>
                     <li><a href="">Recruiting</a></li>
                     <li><a href="">DFS</a></li>
+                </ul>
+            </li>
+            <li><a href="sub.php">Resources</a>
+                <ul>
+                    <li><a href="">Beat Writer Twitter Lists</a></li>
+                    <li><a href="">Depth Charts</a></li>
                 </ul>
             </li>
             <li><a href="sub.php">Conferences & Teams</a>
@@ -133,7 +136,7 @@
   	</main>
 
   	<footer class="footer wrap-bg centered">
-  		<p class="no-mar-y sec-text">&copy; <?php echo date('Y'); ?> Property of Coon</p>
+  		<p class="no-mar-y sec-text">&copy; 2019 Property of Coon</p>
   	</footer>
 
   	<script src="/assets/js/script.js"></script>
