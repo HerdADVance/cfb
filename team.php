@@ -107,6 +107,12 @@
                         <h1>2019 Position Breakdown</h1>
                         <h2>Quarterback</h2>
                         <p>The Texas offense was 
+                        <h2>Running Back</h2>
+                        <h2>Wide Receiver</h2>
+                        <p>After a few years with little to no fantasy value at receiver, the resurgent Longhorn offense wound up with two in the top 30 of the P5 &mdash; Humphrey (#5) and Johnson (#28) &mdash; when the year was done. Johnson was supposed to be the man after leading all other pass catchers by over 300 yards in 2017, but Humphrey was a 6'4"(!) terror in the slot. His 1176 yards were the most by a Longhorn WR since Jordan Shipley in 2009.</p>
+                        <p>With Humphrey gone, Johnson should once again be the man. The 6'6" rising senior was no slouch despite being surpassed by his interestingly-named teammate. Johnson still made 14 more catches, gained over 200 more yards, and scored 5 more touchdowns than in his team-leading sophomore campaign. The sky is the limit for his final season in Austin, and he'll rightly be one of the first WR's off the board in your draft.</p>
+                        <p>Things start to get more intriguing across the rest of this receiver depth chart. Duvernay</p>
+                        <h2>Tight End</h2>
 
                     </div>
                     <div class="team-sidebar col-4">
