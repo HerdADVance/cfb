@@ -32,11 +32,15 @@
         .nav li ul li{background: #bf5700;}
         .nav li ul li:hover > a{color: #333f48;}
 
+        .header.sticky-magic, .sticky-magic .nav{background: #bf5700;}
+
         .team-article h1{color: #bf5700;}
         .team-article h2{color: #333f48;}
 
         .team-sidebar h1{color: #333f48;}
         .team-sidebar-schedule .home{background-color: #ffdcbf;}
+
+        /*.team-position-table th{background-color: #333f48; color: #fff;}*/
 
         th{background: #bf5700; color: #FFF ;}
 
@@ -47,49 +51,52 @@
   <body class="team texas">
 
   	<header class="header full sticky shadow" id="header">
-        <div class="header-info pri row wrap-bg">
-            <div class="col-12">
+        
+        <div class="row unflex">
+
+            <div class="header-info pri row wrap-bg col-12">
                 <div class="header-text">
-                    <h1 class="logo logo-text no-mar-bot"><a href="/" class="sec-text">Follege Cootball</a></h1>
+                    <h1 class="logo-text no-mar-bot"><a href="/" class="sec-text">Follege Cootball</a></h1>
                     <span class="sticky-hide"><h2 class="no-mar-bot sec-text superlight">The world's smartest site for Fantasy College Football and the dumbest for everything else.</h2></span>
                 </div>
             </div>
-        </div>
 
-        <nav class="nav nav-inline nav-stretch wrap-bg full on-top ter">
-        <ul>
-            <li><a href="">Rankings & Projections</a>
-                <ul>
-                    <li><a href="">Weekly Matchups</a></li>
-                    <li><a href="">Recruiting</a></li>
-                    <li><a href="">DFS</a></li>
-                </ul>
-            </li>
-            <li><a href="sub.php">Resources</a>
-                <ul>
-                    <li><a href="">Beat Writer Twitter Lists</a></li>
-                    <li><a href="">Depth Charts</a></li>
-                </ul>
-            </li>
-            <li><a href="sub.php">Conferences & Teams</a>
-                <ul>
-                    <li><a href="">ACC</a></li>
-                    <li><a href="">American</a></li>
-                    <li><a href="">Big 10</a></li>
-                    <li><a href="">Big 12</a></li>
-                    <li><a href="">C-USA</a></li>
-                    <li><a href="">MAC</a></li>
-                    <li><a href="">MWC</a></li>
-                    <li><a href="">Pac-12</a></li>
-                    <li><a href="">SEC</a></li>
-                    <li><a href="">SunBelt</a></li>
-                </ul>
-            </li>
-            <li><a href="sub.php">Podcast</a></li>
-            <li><a href="sub.php">Travel</a></li>
-            <li><a href="sub.php">Fun & Games</a></li>
-        </ul>
-        </nav>
+            <nav class="nav nav-inline nav-stretch wrap-bg full on-top ter col-12">
+            <ul>
+                <li><a href="">Rankings & Projections</a>
+                    <ul>
+                        <li><a href="">Weekly Matchups</a></li>
+                        <li><a href="">Recruiting</a></li>
+                        <li><a href="">DFS</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub.php">Resources</a>
+                    <ul>
+                        <li><a href="">Beat Writer Twitter Lists</a></li>
+                        <li><a href="">Depth Charts</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub.php">Conferences & Teams</a>
+                    <ul>
+                        <li><a href="">ACC</a></li>
+                        <li><a href="">American</a></li>
+                        <li><a href="">Big 10</a></li>
+                        <li><a href="">Big 12</a></li>
+                        <li><a href="">C-USA</a></li>
+                        <li><a href="">MAC</a></li>
+                        <li><a href="">MWC</a></li>
+                        <li><a href="">Pac-12</a></li>
+                        <li><a href="">SEC</a></li>
+                        <li><a href="">SunBelt</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub.php">Podcast</a></li>
+                <li><a href="sub.php">Travel</a></li>
+                <li><a href="sub.php">Fun & Games</a></li>
+            </ul>
+            </nav>
+
+        </div>
 
   	</header>
   	
@@ -106,20 +113,25 @@
                         <p>Speedster junior WR <strong>Devin Duvernay</strong> was at times a decent flex option as the team's #3 WR. The big question for his finale in Austin is will he approach anything close to Johnson's #2 production, or will his 5'11 size keep him as the third option while one of the Longhorns' talented young 4-stars steps into the Johnson role? Senior TE <strong>Andrew Beck</strong> was the starter all year but only topped 30 yards in one game. Don't count on his replacement to be a viable fantasy option in 2019.</p>
                         <h1>2019 Position Breakdown</h1>
                         <h2>Quarterback</h2>
-                        <table class="team-position-table">
-                            <tr><th>Class</th><th>Rank<th>Name</th><th>C/A</th><th>Pct</th><th>Yds</th><th>TD</th><th>INT</th><th>Rush</th></tr>
-                            <tr><td>JR</td><td>4*</td><td>Sam Ehlinger</td><td>275/425</td><td>64.7%</td><td>3296</td><td>25</td><td>5</td><td>164-482-16</td></tr>
-                            <tr><td>JR</td><td>4*</td><td>Shane Buechele</td><td>30/44</td><td>68.2%</td><td>273</td><td>2</td><td>1</td><td>10-8-0</td></tr>
-                            <tr><td>r-FR</td><td>4*</td><td>Cameron Rising</td><td>-</td></tr>
-                            <tr><td>r-FR</td><td>4*</td><td>Casey Thompson</td><td>-</td></tr>
-                            <tr><td>FR</td><td>4*</td><td>Roschon Jonhson</td><td>-</td></tr>
+                        <table class="team-position-table team-players-table">
+                            <tr class="upper-label"><th colspan="6" class="blank"></th><th colspan="2">2018 Rank</th><th colspan="2">Our '19 Rank</th></tr>
+                            <tr><th>Class</th><th>Name</th><th>C/A</th><th>Yds</th><th>TD</th><th>INT</th><th>Pos</th><th>Ovr</th><th>Pos</th><th>Ovr</th></tr>
+                            <tr><td>JR</td><td>Sam Ehlinger</td><td>275/425</td><td>3296<span>482</span></td><td>25<span>16</span></td><td>5</td><td>6</td><td>6</td><td>3</td><td>8</td></tr>
+                            <tr><td>JR</td><td>Shane Buechele</td><td>30/44</td><td>273<span>8</span><td>2<span>0</span></td><td>1</td><td>109</td><td>-</td><td>97</td><td>-</td></tr>
+                        </table>
+                        <table class="team-position-table team-recruits-table">
+                            <tr class="upper-label"><th colspan="4" class="blank"></th><th colspan="3">247 Comp</th><th colspan="2">Our Rank</th></tr>
+                            <tr><th>Class</th><th>Name</th><th>Year</th><th>Type</th><th>*</th><th>Pos</th><th>Ovr</th><th>Pos</th><th>Ovr</th></tr>
+                            <tr><td>FR</td><td>Roschon Johnson</td><td>2019</td><td>DUAL</td><td>4*</td><td>4</td><td>214</td><td>8</td><td>37</td></tr>
+                            <tr><td>r-FR</td><td>Casey Thompson</td><td>2018</td><td>DUAL</td><td>4*</td><td>14</td><td>291</td><td>10</td><td>49</td></tr>
+                            <tr><td>r-FR</td><td>Cameron Rising</td><td>2018</td><td>PRO</td><td>4*</td><td>11</td><td>247</td><td>12</td><td>55</td></tr>
                         </table>
                         <p>The driving force behind the offense's return to relevance was breakout sophomore star <strong>Sam Ehlinger</strong>. After splitting time with <strong>Shane Buechele</strong> as a freshman in 2017, Ehlinger earned the #1 spot last year in fall camp and now has a greater stranglehold on the job than maybe any Longhorn QB since Colt McCoy.</p>
                         <p>Ehlinger was more than good enough through the air, throwing for 3296 yards and 25 TD's to only 5 INT's, but what made him so effective &mdash; and an elite fantasy player &mdash; was his running ability. The 6'3, 235-pound QB was unbeliveably effective near the goal line and accounted for an insane 16 of 23 Longhorn rushing touchdowns and the most by any P5 quarterback. Teams couldn't stop Ehlinger from pounding it into the end zone even when they knew it was coming, but he was also a rushing threat outside of the red zone and finished with 482 yards. Oh yeah, he also caught 5 passes on 5 targets for 51 yards.</p>
-                        <p>Those stats added up to Ehlinger finishing as the #6 fantasy QB with only Tua Tagovailoa ahead of him returning in 2019. The question is can the junior repeat those numbers, and how high should you draft him? One would imagine there would have to be some negative TD regression, but then again, it's difficult to stop a 235-pound QB in short yardage situations. If it ain't broke, don't fix it. Despite the loss of Humphrey, Ehlinger will have a deeper overall receiving corps thanks to an influx of young talent, and there are no glaring concerns on the offensive line so there aren't any reasons to expect a setback in the passing department.</p>
+                        <p>Those stats added up to Ehlinger finishing as the #6 fantasy QB with only some guy named Tua ahead of him returning in 2019. The question is can the junior repeat those numbers, and how high should you draft him? One would imagine there would have to be some negative TD regression, but then again, it's difficult to stop a 235-pound QB in short yardage situations. If it ain't broke, don't fix it. Despite the loss of Humphrey, Ehlinger will have a deeper overall receiving corps thanks to an influx of young talent, and there are no glaring concerns on the offensive line so there aren't any reasons to expect a setback in the passing department.</p>
                         <p>The main worry has to be Ehlinger's ability to stay healthy. He missed time in 2017 with a concussion and injured his throwing shoulder against Baylor in 2018, which caused him to miss most of that game along with some of the Iowa State game when it was reinjured a few weeks later. With Ehlinger's physical style of play, there's always the chance it could be over quickly.</p>
                         <p>But that's a chance you're just gonna have to take. There's such a high floor and a high ceiling for this kid, and he should easily go in the 1st or 2nd round. That being said, run to the waiver wire if you hear anything about an injury to Ehlinger. Buechele has proven to be a more than capable backup, but he might not even be in Austin by the time the season starts if he wants to seek playing time somewhere else.</p>
-                        <p>A trio of 4* QB's are worth keeping an eye on for the future &mdash; redshirt freshmen <strong>Cameron Rising</strong> and <strong>Casey Thompson</strong> along with true freshman <strong>Roschon Johnson</strong>. Johnson was the #4 ranked dual QB of the 2019 class and might have the highest upside of the group.</p>
+                        <p>A trio of 4* QB's are worth keeping an eye on for the future &mdash; redshirt freshmen <strong>Cameron Rising</strong> and <strong>Casey Thompson</strong> along with true freshman <strong>Roschon Johnson</strong>. Johnson was the #4 ranked dual QB of the 2019 class and might have the highest upside of the group. However, all of the prospects' stock is hampered by Ehlinger likely hanging around for his senior season.</p>
                         <h2>Running Back</h2>
                         <p>It's all about <strong>Keaontay Ingram</strong>. The 4* true freshman logged 38% of the RB carries in 2017 behind Cal grad-transfer Tre Watson's 50% and only finished 78 yards behind the senior while both had 3 touchdowns. Ingram averaged 5.0 YPC to Watson's 4.2 and reserve <strong>Daniel Young</strong>'s 3.6.</p>
                         <p>Tom Herman's Houston backfields suggest that last year's timeshare was a matter of circumstance rather than a preference of the head coach. Ingram should be the unchallenged feature back approaching something around 75% of the carries in his sophomore campaign. Ehlinger's battering ram abilities near the goal line take away some of the ceiling, but leading this backfield still carries a top-20 outlook with top-10 potential.</p>
@@ -134,11 +146,12 @@
                         <p>On the outside, <strong>Brennan Eagles</strong> was another 2018 4* true freshman getting some playing time and could be thrust into a starting role should something happen to Johnson or Duvernay. <strong>Jordan Whittington</strong> is yet another 2019 4* frosh rated slightly above Smith. He's an equally valuable dynasty stash with a little less chance to make an impact in 2019. <strong>Al'Vonte Woodard</strong> came in similarly rated with Moore and Eagles last year but was redshirted. <strong>Marcus Washington</strong> joins Smith and Whittington in the 2019 class but as a lower 4* prospect. Finally, <strong>Malcolm Epps</strong> is a guy to keep an eye on. The 6'5" wideout from the 2018 class has tons of potential and is also listed at tight end. He was injured during his freshman campaign.</p>
                         <p>As you can see, there's a lot of traffic on the depth chart after Johnson and Duvernay. Trying to find the right pick from the group is going to be difficult, but it's worth following closely if you're in a dynasty league because at least two or three of these guys are going to be major contributors in 2020.</p>
                         <h2>Tight End</h2>
-                        <p>There's not much to talk about here at a position that has always been a receiving afterthought on Tom Herman teams. Andrew Beck, the unchallenged senior starter in 2018, finished with 281 yards &mdash; good enough for the most among all Herman tight ends at Houston or Texas. If there's any optimism for that to change, it centers on the loss of Humphrey and an unproven third receiver.</p>
+                        <p>There's not much to talk about here at a position that has always been a receiving afterthought on Tom Herman teams. Andrew Beck, the unchallenged senior starter in 2018, finished with 281 yards &mdash; good enough for the most among all Herman tight ends at Houston or Texas. If there's any optimism for that to change, it centers on the loss of Humphrey and using the tight end position as a crutch until the emergence of a proven third receiver.</p>
                         <p>Junior <strong>Cade Brewer</strong> is your likely starter. He went for 7-90-2 in 2017 as a true freshman when Beck missed the season with an injury. Sophomore <strong>Reese Leitao</strong> could also be in the picture, and true freshman <strong>Brayden Liebrock</strong> is a high-3* prospect who is good enough to see time immediately and could be a fantasy consideration in 2020 and beyond.</p>
 
                     </div>
                     <div class="team-sidebar col-4">
+                        <p class="notice">* All rankings are P5 only. We will expand to G5 coverage in 2020.</p>
                         <h1>2019 Players to Target</h1>
                         <table>
                             <tr><th>Pos</th><th>Name</th><th>Rank</th></tr>

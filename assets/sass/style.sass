@@ -65,10 +65,10 @@ $tableHeadBackground: $primaryColor
 $tableHeadBorder: 1px solid $white
 $tableHeadColor: $secondaryColor
 $tableHeadFontSize: 0.75em
-$tableHeadPadding: 0.5em
+$tableHeadPadding: 0.375em
 $tableCellBorder: 1px solid #EEE
 $tableCellFontSize: 0.875em
-$tableCellPadding: 0.5em
+$tableCellPadding: 0.375em 0.5em
 
 /* SELECTED TEXT COLORS */
 $selectedTextBackground: initial
@@ -436,7 +436,6 @@ form .btn
 	transition: $headerTransition
 
 .header.sticky-magic
-	background: rgba($headerColor, $headerStickyOpacity)
 	position: fixed
 	top: 0
 	z-index: 5
@@ -509,7 +508,16 @@ p
 
 /* ========== BEGIN ELEMENTS UNIQUE FROM FRAMEWORK ========== */
 
+/* ----- GLOBAL ----- */
+.notice
+	color: #999
+	font-size: 0.625em
+	font-weight: italic
+
 /* ----- HEADER ----- */
+.header
+	-webkit-transform: translateZ(0)
+
 .header h2
 	font-size: 1em
 
@@ -544,18 +552,28 @@ nav li ul li:hover
 nav li ul a
 	font-size: $navFontSize * 0.875
 
+/* -----STICKY HEADER & NAV ----- */
+.sticky-magic .row
+	align-items: center
+	display: flex
+
+.sticky-magic .header-info
+	float: left
+	margin-right: 0
+	padding-bottom: $headerPadding
+	width: 33.3333%
+
 .sticky-magic .nav
-	background: none
-	position: absolute
-	right: 0
-	top: 0
-	width: 70%
+	float: right
+	padding-bottom: 0
+	width: 66.6666%
 
 .sticky-magic .nav li
 	background: none
 
 .sticky-magic .nav li a
 	font-size: 0.75em
+
 
 /* ----- SPLASH ----- */
 .splash
@@ -565,7 +583,8 @@ nav li ul a
 .splash .overlay
 	background: rgba(255,255,255,0.75)
 
-/* ----- TEAM PAGE -----*/
+
+/* ----- TEAM CONTENT ----- */
 .team-content h1.team-title
 	font-size: 2.5em
 	margin-bottom: 0.5em
@@ -575,12 +594,34 @@ nav li ul a
 	margin-top: 2em
 
 .team-content h2
+	margin-bottom: 0.5em
 	margin-top: 1.75em
 
+.team-position-table th
+	padding: 0.375em 0.125em
 .team-position-table td
 	font-size: 0.75em
+	padding: 0.375em 0.125em
 	text-align: center
+.team-position-table span
+	color: #999
+	display: block
+	font-size: 0.75em
+	margin-top: 0.25em
 
+.upper-label th
+	background: #CCC
+	color: #666
+	font-size: 0.625em
+	font-weight: 400
+	padding: 0.25em
+
+.upper-label th:first-child
+	background: #fff
+	border: none
+
+
+/* ----- TEAM SIDEBAR ----- */
 .team-sidebar h1
 	font-size: 1.125em
 	margin-bottom: 0.625em
@@ -590,6 +631,8 @@ nav li ul a
 
 .team-sidebar-schedule td
 	border: 1px solid #CCC
+
+
 
 
 /* ----- FOOTER ----- */
